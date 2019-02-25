@@ -2,7 +2,7 @@ require 'sinatra/base'
 
 class Bookmarks < Sinatra::Base
   get '/' do
-    'Hello Bookmarks!'
+    'Bookmark Manager!'
   end
 
 
