@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require './lib/bookmark'
 
 class Bookmarks < Sinatra::Base
   get '/' do
@@ -12,7 +13,6 @@ class Bookmarks < Sinatra::Base
       "http://www.google.com"
   ]
 
-    bookmarks.join
     erb :'bookmarks/index'
   end
 
