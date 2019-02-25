@@ -2,8 +2,20 @@ require 'sinatra/base'
 
 class Bookmarks < Sinatra::Base
   get '/' do
-    'Bookmark Manager!'
+    "Bookmark Manager!"
   end
+
+  get '/bookmarks' do
+    @bookmarks = [
+      "http://www.makersacademy.com",
+      "http://www.github.com",
+      "http://www.google.com"
+  ]
+
+    bookmarks.join
+    erb :'bookmarks/index'
+  end
+
 
 
 
