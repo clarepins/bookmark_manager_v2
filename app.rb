@@ -7,6 +7,7 @@ class Bookmarks < Sinatra::Base
   end
 
   get '/bookmarks' do
+    p ENV
     @bookmarks = Bookmark.all
     erb :'bookmarks/index'
   end
@@ -14,3 +15,5 @@ class Bookmarks < Sinatra::Base
 
   run! if app_file == $0
 end
+
+# adding comment to commit

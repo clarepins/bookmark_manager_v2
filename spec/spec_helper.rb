@@ -5,8 +5,12 @@ require 'simplecov-console'
 require 'capybara'
 # require 'features/web_helpers'
 require './app.rb'
+require 'pg'
 
 ENV['RACK_ENV'] = 'test'
+
+### Using the Environment variable to pick the right database
+ENV['ENVIRONMENT'] = 'test'
 
 Capybara.app = Bookmarks
 
