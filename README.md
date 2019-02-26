@@ -14,7 +14,7 @@ I want to be able to mark the page that I'm reading.
 # Bookmark_manager
 
 
-## How to use the program
+## How to set up the database
 - psql postgres
 - CREATE DATABASE bookmark_manager;
 - \c bookmark_manager;
