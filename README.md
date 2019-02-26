@@ -12,3 +12,11 @@ I want to be able to mark the page that I'm reading.
 ## Domain Model
 ![Bookmark Manager Domain Model](snapp.jpg)
 # Bookmark_manager
+
+
+## How to use the program
+- psql postgres
+- CREATE DATABASE bookmark_manager;
+- \c bookmark_manager;
+- CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60));
+- run the query saved in 01_create_bookmarks_table.sql
