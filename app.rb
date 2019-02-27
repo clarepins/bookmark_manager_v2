@@ -13,11 +13,14 @@ class Bookmarks < Sinatra::Base
   end
 
   get '/bookmarks/new' do
-    erb :'new'
+    erb :'bookmarks/new'
   end
 
-  post '/save_bookmark' do
-
+  post '/bookmarks' do
+    Bookmark.add(params[:add_bookmark])
+    @bookmarks = Bookmark.all
+    p "New bookmark added!"
+    erb :'bookmarks/index'
   end
 
   # post '/add_bookmark' do
