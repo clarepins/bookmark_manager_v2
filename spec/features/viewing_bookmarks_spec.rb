@@ -10,21 +10,12 @@ feature "Viewing bookmarks" do
     connection = PG.connect(dbname: 'bookmark_manager_test')
 
     # Add the test data
-    connection.exec("INSERT INTO bookmarks (url) VALUES('http://www.makersacademy.com');")
-    connection.exec("INSERT INTO bookmarks (url) VALUES('http://www.github.com');")
-    connection.exec("INSERT INTO bookmarks (url) VALUES('http://www.google.com');")
+    connection.exec("INSERT INTO bookmarks VALUES(1, 'http://www.makersacademy.com');")
+    connection.exec("INSERT INTO bookmarks VALUES(2, 'http://www.github.com');")
+    connection.exec("INSERT INTO bookmarks VALUES(3, 'http://www.google.com');")
 
     visit '/bookmarks'
 
-    expect(page).to have_content "http://www.makersacademy.com"
-    expect(page).to have_content "http://www.github.com"
-    expect(page).to have_content "http://www.google.com"
-  end
-end
-
-feature "viewing bookmars in /bookmarks route" do
-  scenario "show list of bookmarks" do
-    visit '/bookmarks'
     expect(page).to have_content "http://www.makersacademy.com"
     expect(page).to have_content "http://www.github.com"
     expect(page).to have_content "http://www.google.com"
