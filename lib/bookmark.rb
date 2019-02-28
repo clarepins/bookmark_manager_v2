@@ -29,10 +29,14 @@ class Bookmark
   def self.delete(bookmarks:)
     self.choose_env
     bookmarks.each do |key, value|
-      p key
       @connection.exec("DELETE FROM bookmarks WHERE title = replace('#{key}','\"','')")
     end
   end
+
+  # def self.update(bookmark:)
+  #   @connection.exec("UPDATE bookmarks SET title = ")
+  #
+  # end
 
   def self.choose_env
     if ENV['ENVIRONMENT'] == 'test'

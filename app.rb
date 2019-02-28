@@ -22,10 +22,21 @@ class Bookmarks < Sinatra::Base
   end
 
   post '/bookmarks/delete' do
-    p params
     Bookmark.delete(bookmarks: params)
     redirect '/bookmarks'
   end
+
+  post '/bookmarks/update' do
+    p params
+    # Bookmark.update(bookmark: params)
+    # @bookmark = #thing returned from method
+    erb :'bookmarks/update'
+    #redirect('/bookmarks/update')
+  end
+
+  # get '/bookmarks/update' do
+  #   Bookmark.update(bookmark: params)
+  # end
 
   run! if app_file == $0
 end

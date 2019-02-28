@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/student/Documents/my_projects/w_4/bookmark-manager-d2/spec/bookmark_spec.rb": [
+      "/Users/matt/projects/pairing_exercises/bookmark_manager_v2/spec/bookmark_spec.rb": [
         1,
         1,
         null,
@@ -39,7 +39,7 @@
         null,
         null
       ],
-      "/Users/student/Documents/my_projects/w_4/bookmark-manager-d2/spec/database_helpers.rb": [
+      "/Users/matt/projects/pairing_exercises/bookmark_manager_v2/spec/database_helpers.rb": [
         1,
         null,
         1,
@@ -48,7 +48,7 @@
         1,
         null
       ],
-      "/Users/student/Documents/my_projects/w_4/bookmark-manager-d2/spec/features/add_bookmark_spec.rb": [
+      "/Users/matt/projects/pairing_exercises/bookmark_manager_v2/spec/features/add_bookmark_spec.rb": [
         1,
         1,
         1,
@@ -63,7 +63,7 @@
         null,
         null
       ],
-      "/Users/student/Documents/my_projects/w_4/bookmark-manager-d2/spec/features/delete_spec.rb": [
+      "/Users/matt/projects/pairing_exercises/bookmark_manager_v2/spec/features/delete_spec.rb": [
         1,
         1,
         1,
@@ -93,7 +93,23 @@
         null,
         null
       ],
-      "/Users/student/Documents/my_projects/w_4/bookmark-manager-d2/spec/features/viewing_bookmarks_spec.rb": [
+      "/Users/matt/projects/pairing_exercises/bookmark_manager_v2/spec/features/update_bookmark_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/Users/matt/projects/pairing_exercises/bookmark_manager_v2/spec/features/viewing_bookmarks_spec.rb": [
         1,
         1,
         1,
@@ -117,6 +133,6 @@
         null
       ]
     },
-    "timestamp": 1551369415
+    "timestamp": 1551373442
   }
 }
