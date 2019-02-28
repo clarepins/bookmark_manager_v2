@@ -63,6 +63,36 @@
         null,
         null
       ],
+      "/Users/student/Documents/my_projects/w_4/bookmark-manager-d2/spec/features/delete_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/student/Documents/my_projects/w_4/bookmark-manager-d2/spec/features/viewing_bookmarks_spec.rb": [
         1,
         1,
@@ -87,6 +117,6 @@
         null
       ]
     },
-    "timestamp": 1551365175
+    "timestamp": 1551369415
   }
 }
