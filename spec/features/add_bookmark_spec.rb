@@ -1,8 +1,13 @@
 feature 'add bookmark' do
   scenario 'submit a bookmmark via form' do
     visit('/bookmarks/new')
-    fill_in(:add_bookmark, with: 'http://www.bbc.co.uk')
+    fill_in(:title, with: 'test_BBC')
+    fill_in(:url, with: 'http://www.bbc.co.uk')
     click_button 'Go!'
-    expect(page).to have_content('bookmark added' && 'http://www.bbc.co.uk')
+    title = 'test_BBC'
+    url = 'http://www.bbc.co.uk'
+    expect(page).to have_link(title, href: url)
   end
 end
+
+#This test shouldn't be passing but it is!

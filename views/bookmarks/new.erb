@@ -1,5 +1,6 @@
-<form action='/bookmarks' method='post'>
-  <label name='add_bookmark'>Add new bookmark</label>
-  <input name='add_bookmark' type='text'>
+<h1>Add new bookmark</h1>
+<form action='/bookmarks/save_new' method='post'>
+  <input name='title' type='text' placeholder='Title'>
+  <input name='url' type='text' placeholder='URL'>
   <button type='submit'>Go!</button>
 </form>

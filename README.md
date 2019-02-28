@@ -14,12 +14,14 @@ I want to be able to mark the page that I'm reading.
 # Bookmark_manager
 
 
+
 ## How to set up the database
 $ psql postgres
 $ CREATE DATABASE bookmark_manager;
 $ \c bookmark_manager;
 $ CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60));
-run the query saved in 01_create_bookmarks_table.sql
+run the queries saved in db/migrations
+
 
 ## How to set up the test database
 $ psql postgres
